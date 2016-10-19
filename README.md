@@ -1,0 +1,1 @@
+# Django Pager without ORM 

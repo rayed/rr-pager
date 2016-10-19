@@ -1,0 +1,18 @@
+
+<nav aria-label="Page navigation">
+<ul class="pagination">
+
+      {% for page in pager.pages %}
+      <li class="
+{% if page.meta and page.active %}
+disabled
+{% elif page.meta and page.url == '' %}
+disabled
+{% elif page.active %}
+active
+{% endif %}
+      "><a href="{{page.url}}">{{page.name}}</a></li>
+      {% endfor %}
+
+</ul>
+</nav>

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% load rr_pager %}
+
+{% block content %}
+<h1>Home</h1>
+
+<p>
+<a href="{% rr_url_replace page='x' %}">Test</a>
+</p>
+
+{% rr_pager size=1220 %}
+{% include "pager.html" %}
+
+{% endblock %}
