@@ -38,7 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'pager',
+    'rr_pager',
+    'pager_test',
 )
 
 MIDDLEWARE_CLASSES = (
